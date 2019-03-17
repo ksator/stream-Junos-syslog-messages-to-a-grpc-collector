@@ -51,3 +51,23 @@ notification {
 
 ```
 
+To display information about sensors, run this command on a Junos device:
+```
+jcluser@vMX-addr-0> show agent sensors 
+```
+To verify if there is an established connection between jtimon (grpc client) and a Junos device (grpc server), run this command on a Junos device:
+```
+jcluser@vMX-addr-0> show system connections | grep 32768
+tcp4       0      0  100.123.1.0.32768                             100.123.35.0.50808                            ESTABLISHED
+tcp46      0      0  *.32768                                       *.*                                           LISTEN
+
+
+```
+Generate a custom syslog message from the Junos device
+```
+jcluser@vMX-addr-0> start shell
+% logger -e EVENT_FAKE -d mgd "THIS IS A FAKE SYSLOG EVENT"
+% exit
+```
+
+
