@@ -109,6 +109,43 @@ jcluser@vMX-addr-0> start shell
 % logger -e EVENT_FAKE -d mgd "THIS IS A FAKE SYSLOG EVENT"
 % exit
 ```
+## jtimon output
+```
+system_id: vMX-addr-0
+component_id: 65535
+sub_component_id: 0
+path: sensor_1000:/junos/events/:/junos/events/:eventd
+sequence_number: 11
+timestamp: 1552828143258
+sync_response: false
+  key: __timestamp__
+  uint_value: 1552828143259
+  key: __junos_re_stream_creation_timestamp__
+  uint_value: 1552828143258
+  key: __junos_re_payload_get_timestamp__
+  uint_value: 1552828143258
+  key: __junos_re_event_timestamp__
+  uint_value: 1552828143258
+  key: __prefix__
+  str_value: /junos/events/event[id='EVENT_FAKE' and type='2' and facility='1']/
+  key: timestamp/seconds
+  uint_value: 1552828143
+  key: timestamp/microseconds
+  uint_value: 257801
+  key: priority
+  uint_value: 5
+  key: pid
+  uint_value: 71830
+  key: message
+  str_value: THIS IS A FAKE SYSLOG EVENT
+  key: daemon
+  str_value: mgd
+  key: hostname
+  str_value: vMX-addr-0
+  key: logoptions
+  int_value: 0
+
+```
 
 # Looking for others jtimon demos
 
