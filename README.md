@@ -73,6 +73,9 @@ $ docker ps | grep jtimon
 ```
 
 ### create a jtimon configuration file
+
+use of the files at the root of this repository
+
 ```
 vi vmx0.json
 ```
