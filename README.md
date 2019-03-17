@@ -1,5 +1,3 @@
-# Stream Junos syslog messages to your telemetry collector
-
 Starting in Junos OS Release 18.1R1, a new sensor is available that allows syslog data to be streamed to network telemetry collector systems.  
 Using the `/junos/events/` sensor, you can now stream syslog messages to your telemetry-collection systems.
 
@@ -13,7 +11,6 @@ We will use jtimon.
 jtimon is a grpc client.  
 It is opensourced and written in GO.  
 https://github.com/nileshsimaria/jtimon 
-
 
 # Demo
 
@@ -76,17 +73,24 @@ $ docker ps | grep jtimon
 ```
 
 ### create a jtimon configuration file
-
+```
+vi vmx0.json
+```
 ### run jtimon 
 
 Lets run jtimon dockerized with the configuration file. Let's print telemetry data.  
+```
+./jtimon --config vmx0.json --print
+```
 
-## Display information about sensors 
+## Verify on Junos 
+
+### Display information about sensors 
 To display information about sensors, run this command on a Junos device:
 ```
 jcluser@vMX-addr-0> show agent sensors 
 ```
-##  verify if there is an established connection between jtimon and a Junos device 
+###  verify if there is an established connection between jtimon and a Junos device 
 To verify if there is an established connection between jtimon (grpc client) and a Junos device (grpc server), run this command on a Junos device:
 ```
 jcluser@vMX-addr-0> show system connections | grep 32768
