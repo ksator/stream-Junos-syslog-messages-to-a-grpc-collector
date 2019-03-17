@@ -1,0 +1,14 @@
+{
+    "host": "100.123.1.0",
+    "port": 32768,
+    "user": "jcluser",
+    "password": "Juniper!1",
+    "cid": "client-id",
+    "grpc" : {
+        "ws" : 524288
+    },
+    "paths": [{
+        "path": "/junos/events/event[starts-with(id, 'EVENT_FAKE')]",
+        "freq": 0
+    }]
+}
