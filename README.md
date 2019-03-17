@@ -10,7 +10,8 @@ We will use jtimon.
 
 jtimon is a grpc client.  
 It is opensourced and written in GO.  
-https://github.com/nileshsimaria/jtimon 
+https://github.com/nileshsimaria/jtimon  
+jtimon can also export the data received from Junos devices to Influxdb, Prometheus, ... 
 
 # Demo
 
