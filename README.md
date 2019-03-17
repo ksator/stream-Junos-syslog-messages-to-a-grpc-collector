@@ -1,25 +1,18 @@
+## Stream Junos syslog messages to to your telemetry collector
+
 Starting in Junos OS Release 18.1R1, a new sensor is available that allows syslog data to be streamed to network telemetry collector systems.  
-Using the `/junos/events/` sensor, you can now stream syslog messages event data to your telemetry-collection systems.
+Using the `/junos/events/` sensor, you can now stream syslog messages to your telemetry-collection systems.
 
 ## About this repo
 
 We will subscribe to Junos syslog events to stream them to a gRPC telemetry collector  
 We will use jtimon. 
 
-## Credits
-
-All the credits go to https://techmocha.blog/2018/04/05/streaming-syslog-events-through-junos-telemetry-interface/
-
 ## About Jtimon
 
 jtimon is a grpc client.  
 It is opensourced and written in GO.  
 https://github.com/nileshsimaria/jtimon 
-
-## Looking for others jtimon demos
-
-https://github.com/ksator/collect_telemetry_from_junos_with_jtimon  
-https://github.com/ksator/junos_monitoring_with_prometheus  
 
 ## Demo
 
@@ -97,4 +90,12 @@ jcluser@vMX-addr-0> start shell
 % exit
 ```
 
+## Looking for others jtimon demos
+
+https://github.com/ksator/collect_telemetry_from_junos_with_jtimon  
+https://github.com/ksator/junos_monitoring_with_prometheus  
+
+## Credits
+
+All the credits go to https://techmocha.blog/2018/04/05/streaming-syslog-events-through-junos-telemetry-interface/
 
