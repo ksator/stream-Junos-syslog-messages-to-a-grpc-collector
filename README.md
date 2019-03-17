@@ -53,7 +53,8 @@ notification {
 ## jtimon 
 
 ### requirements
-Install Docker
+
+Install Docker on the ubuntu VM. 
 
 ### Build a jtimon Docker image
 ```
@@ -73,6 +74,12 @@ There is no container running
 ```
 $ docker ps | grep jtimon
 ```
+
+### create a jtimon configuration file
+
+### run jtimon 
+
+Lets run jtimon dockerized with the configuration file. Let's print telemetry data.  
 
 ## Display information about sensors 
 To display information about sensors, run this command on a Junos device:
