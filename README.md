@@ -1,5 +1,6 @@
 Starting in Junos OS Release 18.1R1, a new sensor is available that allows syslog data to be streamed to network telemetry collector systems.  
-Using the `/junos/events/` sensor, you can now stream syslog messages to your telemetry-collection systems.
+Using the `/junos/events/` sensor, you can now stream syslog messages to your telemetry-collection systems.  
+So the same gRPC telemetry collector can be used to subscribe to syslog messages and to openconfig paths.  
 
 # About this repo
 
