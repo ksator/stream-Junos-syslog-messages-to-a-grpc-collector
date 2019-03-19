@@ -20,7 +20,9 @@ jtimon can also export the data received from Junos devices to Influxdb, Prometh
 
 we will use one Junos device and one ubuntu VM.  
 
-## Junos requirements 
+## requirements
+
+### Junos requirements
 
 This feature is available from Junos 18.1R1. 
 
@@ -49,10 +51,7 @@ notification {
 }
 
 ```
-## Ubuntu requirement
-
-Install Docker on the ubuntu VM. 
-
+### Install Docker on the ubuntu VM. 
 
 ```
 $ sudo apt-get update
@@ -143,6 +142,11 @@ $ docker ps | grep jtimon
 ### create a jtimon configuration file
 
 use of the files at the root of this repository
+
+[vmx0.json](vmx0.json) is used to subscribe to all syslog messages   
+[vmx0_filter_daemon.json](vmx0_filter_daemon.json) is used to subscribe to all syslog messages sourced from a specific daemon  
+[vmx0_filter_event_id.json](vmx0_filter_event_id.json) is used to subscribe to a specific syslog event  
+[vmx0_filter_starts_with_event_id.json](vmx0_filter_starts_with_event_id.json) is used to subscribe to syslog events that begin with a certain string  
 
 ```
 vi vmx0.json
