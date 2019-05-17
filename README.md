@@ -226,5 +226,5 @@ https://github.com/ksator/junos_monitoring_with_prometheus
 
 # Credits
 
-Thank you to Jag Channa of OpenEye Software for writing this blog: https://openeye.blog/2018/04/05/streaming-syslog-events-through-junos-telemetry-interface/. It provided the basis for this repository. 
+Thank you to Jag Channa for writing this blog: https://openeye.blog/2018/04/05/streaming-syslog-events-through-junos-telemetry-interface/. It provided the basis for this repository. 
 
